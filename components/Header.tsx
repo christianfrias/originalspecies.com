@@ -25,11 +25,7 @@ function Header() {
         <header className={`${isScrolled && 'bg-red-500'}`}>
             <div>
                 <Link href="/">
-                    <div>
-                    
-                    <img src={`${isScrolled ? '/images/logos/logo_bl.svg' : '/images/logos/logo_wh.svg'}`} className="cursor-pointer object-contain" width={52} height={40} />
-                    </div>
-
+                    <img src={`${isScrolled ? '/images/logos/logo_bl.svg' : '/images/logos/logo_wh.svg'}`} className="cursor-pointer object-contain" width={52} height={40} alt="Original Species by Christian Frias" />
                 </Link>
             </div>
             <div className="flex space-x-4">
