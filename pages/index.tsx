@@ -5,7 +5,7 @@ import Header from '../components/Header'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-row justify-center py-2">
+    <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] md:h-[140vh]">
       <Head>
         <title>OriginalSpecies by Christian Frias</title>
         <link rel="icon" href="/favicon.ico" />
