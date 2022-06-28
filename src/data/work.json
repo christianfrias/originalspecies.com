@@ -1,0 +1,50 @@
+{
+    "work": [
+        {
+            "id": 1,
+            "title": "Vizlly",
+            "client": "Leonardo Worldwide",
+            "categories": [
+                "Branding",
+                "Graphic + Print",
+                "Motion + Video Editing",
+                "Web Development"
+            ],
+            "hero": "/images/work/vizlly/os-vz00.jpg",
+            "preview_1": "/images/work/vizlly/os-vz01.jpg",
+            "preview_2": "/images/work/vizlly/os-vz02.jpg",
+            "preview_3": "/images/work/vizlly/os-vz03.jpg",
+            "url": "/work/vizlly"
+        },
+        {
+            "id": 2,
+            "title": "Anne of Green Gables",
+            "client": "Sulliven Entertainment",
+            "categories": [
+                "Branding",
+                "Graphic + Print",
+                "Motion + Video Editing",
+                "Web Development"
+            ],
+            "hero": "/images/work/anne/os-anne00.jpg",
+            "preview_1": "/images/work/anne/os-anne01.jpg",
+            "preview_2": "/images/work/anne/os-anne02.jpg",
+            "preview_3": "/images/work/anne/os-anne03.jpg",
+            "url": "/work/anne"
+        },
+        {
+            "id": 3,
+            "title": "The Future of Hotel Marketing",
+            "client": "Leonardo Worldwide",
+            "categories": [
+                "Branding",
+                "Graphic + Print"
+            ],
+            "hero": "/images/work/future/os-future00.jpg",
+            "preview_1": "/images/work/future/os-future01.jpg",
+            "preview_2": "/images/work/future/os-future02.jpg",
+            "preview_3": "/images/work/future/os-future03.jpg",
+            "url": "/work/future-hotel-marketing"
+        }
+    ]
+}
