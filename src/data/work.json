@@ -45,6 +45,21 @@
             "preview_2": "/images/work/future/os-future02.jpg",
             "preview_3": "/images/work/future/os-future03.jpg",
             "url": "/work/future-hotel-marketing"
+        },
+        {
+            "id": 4,
+            "title": "Hearts of Tango",
+            "client": "Puentebyte Productions",
+            "categories": [
+                "Branding",
+                "Graphic + Print",
+                "Motion + Video Editing"
+            ],
+            "hero": "/images/work/tango/os-tango00.jpg",
+            "preview_1": "/images/work/tango/os-tango01.jpg",
+            "preview_2": "/images/work/tango/os-tango02.jpg",
+            "preview_3": "/images/work/tango/os-tango03.jpg",
+            "url": "/work/hearts-of-tango"
         }
     ]
 }

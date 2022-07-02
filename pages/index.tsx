@@ -4,10 +4,12 @@ import Image from 'next/image'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import {Carousel} from 'flowbite-react'
+import Carousel from '../components/Carousel'
+import Work from '../components/Work'
 
 const Home: NextPage = (props) => {
   const work = props.work;
+
   return (
     <div>
       <Head>
@@ -16,23 +18,23 @@ const Home: NextPage = (props) => {
       </Head>
       <Header />
 
-      <div className="h-56 sm:h-128 xl:h-128 2xl:h-128">
-        <Carousel indicators={false} slideInterval={10000} >
+      <Carousel work={work}/>      
+
+      {/* <div className="h-56 sm:h-128 xl:h-128 2xl:h-128">
+        <Carousel indicators={false} slideInterval={10000} style={{ borderRadius: '0' }} leftControl=" " rightControl=" ">
           {work.map(proj =>
-            <Banner {...proj} key={proj.id} className="rounded-none"/>
+            <Banner {...proj} key={proj.id} className="rounded-none" style={{ borderRadius: '3' }}/>
           )}
         </Carousel>
-      </div>
-
-
+      </div> */}
 
       <main>
         <section>
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
+
+          <p className="text-2xl leading-10"><strong>Hello. I'm Christian.</strong> I'm a <a href="/about">visual designer and coder</a> who helps companies conceptualize, create and deliver data-driven products and meaningful digital experiences. I take an interdisciplinary approach, <a href="/work">blending design, code and video,</a> to craft digitally enhanced solutions designed to win conversations. For the last eight years, my work has focused on solving problems, moving people towards action, and helping businesses succeed. With heart and hustle, I move purpose-driven brands to clarity.</p>
+
+
+          <Work work={work}/>
         </section>
       </main>
       <Footer />
