@@ -5,24 +5,27 @@
 /* html, body, heading */
 @layer base {
     body {
-        /* @apply bg-[#141414];  */
+        @apply text-slate-900;
     }
     main {
-        @apply bg-white py-16 mb-72;
+        @apply bg-white md:mb-72 lg:mb-60;
     }
     section {
-        @apply container mx-auto;
+        @apply container mx-auto px-4 md:px-0;
     }
     p {
         @apply font-normal;
     }
+    a {
+        @apply transition duration-500 ease-in-out hover:text-ribbon;
+    }
     footer {
-        @apply fixed bottom-0 -z-50 flex flex-col w-full justify-between;
+        @apply md:fixed md:bottom-0 -z-50 flex flex-col w-full justify-between;
     }
 }
  /* custom classNames */
 @layer components {
     .headerLink {
-        @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3];
+        @apply cursor-pointer text-5xl leading-10 mb-6 transition font-semibold text-slate-600 hover:text-ribbon;
     }
 }

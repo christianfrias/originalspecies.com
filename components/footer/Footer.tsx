@@ -4,32 +4,32 @@ import Image from "next/image";
 function Footer() {
   return (
     <footer>
-      <div className="px-4 py-12 bg-slate-100">
-        <section className="sm:flex sm:items-center sm:justify-between gap-10 ">
-          <p className="block text-md text-gray-500 sm:text-left dark:text-gray-400 max-w-xl">
+      <div className="px-4 py-8 bg-slate-100">
+        <section className="md:flex md:items-center md:justify-between gap-10 ">
+          <p className="block text-center md:text-left max-w-xl">
             <strong>Hello. I&#39;m Christian.</strong> I&#39;m a visual designer and
             coder who helps companies conceptualize, create and deliver
             data-driven products and meaningful digital experiences. I take an
             interdisciplinary approach, blending design, code and video, to
             craft digitally enhanced solutions designed to win conversations.
           </p>
-          <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0 text-right">
-            <h3 className="text-2xl">
+          <div className="flex mt-4 space-x-6 justify-center md:mt-0 text-center md:text-right">
+            <h3 className="text-xl md:text-3xl leading-5 md:leading-9">
               Let&#39;s work together.
               <br />
               <Link href="mailto:hello@originalspecies.com">
-                hello@originalspecies.com
+                <a className="font-semibold hover:text-ribbon">hello@originalspecies.com</a>
               </Link>
             </h3>
           </div>
         </section>
       </div>
       <div className="px-4 py-6">
-        <section className="sm:flex sm:items-center sm:justify-between">
-          <div className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © {new Date().getFullYear()} Christian Frias. Built on NextJS and Typescript.
+        <section className="flex sm:items-center justify-between">
+          <div className="block text-sm sm:text-center">
+            © {new Date().getFullYear()} Christian Frias. 
           </div>
-          <div className="flex mt-4 space-x-3 sm:justify-center sm:mt-0">
+          <div className="flex space-x-3 sm:justify-center">
             {/* Github */}
             <a
               href="https://github.com/christianfrias"

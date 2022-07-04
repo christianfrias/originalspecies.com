@@ -1,6 +1,7 @@
 import { MenuAlt1Icon } from "@heroicons/react/solid"
 import Link from "next/link"
 import {useState, useEffect} from "react"
+import OffCanvas from "./OffCanvas"
 
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -23,7 +24,7 @@ function Header() {
 
     return (
          
-            <header className={`fixed top-0 z-50 w-full py-4 ${isScrolled && 'bg-red-500'}`}>
+            <header className={`fixed top-0 z-50 w-full py-4 transition duration-500 ${isScrolled && 'bg-white/90'}`}>
                 <section className="flex items-center justify-between transition-all">
                     <div>
                         <Link href="/">
@@ -31,17 +32,10 @@ function Header() {
                         </Link>
                     </div>
                     <div className="flex space-x-4">
-                        <ul className="hidden sm:flex space-x-4">
-                            <li className="headerLink">Home</li>
-                            <li className="headerLink">Work</li>
-                            <li className="headerLink">CV</li>
-                            <li className="headerLink">About</li>
-                            <li className="headerLink">Contact</li>
-                        </ul>
-                        <MenuAlt1Icon className="h-6 w-6" style={{ fill: 'white' }}/>
+                        <a data-bs-toggle="offcanvas" href="#osMenu" role="button" aria-controls="osMenu"><MenuAlt1Icon className={`h-6 w-6  hover:fill-ribbon transition duration-500 ${isScrolled ? 'fill-black' : 'fill-white'}`} /></a>
                     </div>
                 </section>
-
+                <OffCanvas/>
             </header>
     )
 }
