@@ -26,6 +26,6 @@
  /* custom classNames */
 @layer components {
     .headerLink {
-        @apply cursor-pointer text-5xl leading-10 mb-6 transition font-semibold text-slate-600 hover:text-ribbon;
+        @apply cursor-pointer text-3xl md:text-5xl leading-10 mb-3 md:mb-6 transition font-semibold text-slate-600 hover:text-ribbon;
     }
 }

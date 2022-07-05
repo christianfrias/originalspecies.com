@@ -15,7 +15,7 @@ function Carousel({ work }) {
                 <div className="carousel-inner relative w-full overflow-hidden " >
                     {work.slice(0, 5).map((proj, i) =>         
                         <div className={`carousel-item relative float-left w-full h-[500px] md:h-[650px] ${i == 0 ? "active" : ""}`} key={i}>
-                            <Image src={proj.hero} className='block w-full' layout='fill' objectFit='cover' alt={proj.title} priority={1} />
+                            <Image src={proj.hero} className='block w-full' layout='fill' objectFit='cover' alt={proj.title} priority />
                             <div className="carousel-caption hidden md:block absolute text-center drop-shadow-2xl">
                                 <Link href={proj.url}>
                                     <h5 className="text-sm uppercase tracking-widest cursor-pointer animate-pulse mb-7 hover:animate-none hover:text-ribbon transition duration-500">{proj.title}: View Project</h5>

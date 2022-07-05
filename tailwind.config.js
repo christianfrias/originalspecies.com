@@ -24,6 +24,9 @@ module.exports = {
       },
       colors: {
         'ribbon': '#ef173b',
+      },
+      lineHeight: {
+        '12': '3.5rem',
       }
     },
     borderWidth: {
