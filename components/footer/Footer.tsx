@@ -14,7 +14,7 @@ function Footer() {
             craft digitally enhanced solutions designed to win conversations.
           </p>
           <div className="flex mt-4 space-x-6 justify-center md:mt-0 text-center md:text-right">
-            <h3 className="text-xl md:text-3xl leading-5 md:leading-9">
+            <h3 className="text-xl md:text-3xl leading-6 md:leading-9">
               Let&#39;s work together.
               <br />
               <Link href="mailto:hello@originalspecies.com">

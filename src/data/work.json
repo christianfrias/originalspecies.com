@@ -42,15 +42,15 @@
                     "outro": "Months of Development"
                 },
                 { 
-                    "intro": "88,000",
+                    "intro": "88K",
                     "outro": "Page Views in One Year"
                 },
                 { 
-                    "intro": "60,000",
+                    "intro": "60K",
                     "outro": "Web Traffic Visits in One Year"
                 },
                 { 
-                    "intro": "20,000",
+                    "intro": "20K",
                     "outro": "Cumulative Views of Product Videos"
                 }
             ],
@@ -83,7 +83,68 @@
             "preview_1": "/images/work/anne/os-anne01.jpg",
             "preview_2": "/images/work/anne/os-anne02.jpg",
             "preview_3": "/images/work/anne/os-anne03.jpg",
-            "url": "/work/anne"
+            "url": "/work/anne",
+            "desc": "Anne of Green Gables is a Canadian television drama film series produced by Sullivan Entertainment. For this project, I was tasked with creating the website, producing videos for the subsequent HD restoration release and Sullivan Insiders video series, creative direction for integrated campaigns and visual design.",
+            "statistics": [
+                { 
+                    "intro": "+25%",
+                    "outro": "Increase in Return Visitor Traffic"
+                },
+                { 
+                    "intro": "800K",
+                    "outro": "Organic Web Traffic in Two Years"
+                },
+                { 
+                    "intro": "1.6M",
+                    "outro": "Organic Page Views in Two Years"
+                },
+                { 
+                    "intro": "$1.7M",
+                    "outro": "Sales Attributed to Marketing Initiatives in Two Years"
+                },
+                { 
+                    "intro": "$0",
+                    "outro": "Budget Spent on Ads or SEM"
+                },
+                { 
+                    "intro": "+102%",
+                    "outro": "Increase in Web Traffic during Anne Fan Appreciation Day"
+                },
+                { 
+                    "intro": "+40%",
+                    "outro": "Increase in Sales during Anne Fan Appreciation Day"
+                },
+                { 
+                    "intro": "400K",
+                    "outro": "Cumulative Views of Sullivan Insider Videos in Two Years"
+                },
+                { 
+                    "intro": "1M",
+                    "outro": "Views of Anne of Green Gables HD Trailer"
+                },
+                { 
+                    "intro": "61K",
+                    "outro": "Organic Likes on Facebook in Two Years"
+                },
+                { 
+                    "intro": "10K",
+                    "outro": "Organic Followers on Twitter in Two Years"
+                }
+            ],
+            "details": [
+                {
+                    "title": "The Website",
+                    "desc": "The following goals were set for the website development: renew the company branding, present a contemporary approach to Anne, increase web traffic, and increase sales. While the original Anne website was predominantly a blog that catered to a niche audience, I evolved that into a space where nostalgists could embrace elements of the series they loved, but also into a space where Anne could be introduced to those who never knew her. A few innovations were introduced: Tweets as articles, a rotating articles header, inconspicuous product ads, deeper social media and multimedia integration, themed video playlists, and a real-time trending stories list. Launched “The World of Anne” section, which featured fixture pages that showcased the story, the cast, the music, the books, and various behind the scene experiences. On the backend, a more extensive SEO plan was implemented. All of these were established to present Anne in both a contemporary and sentimental manner."
+                },
+                {
+                    "title": "The Designs",
+                    "desc": "For the HD Restoration packaging, there was a conscious effort to modernize the brand, both in appearance and presentation. The combination of the fonts, Garamond and Brandon Grotesque, functioned as an interplay between the past and the present. Various imagery - from florals to scripted handwritten text - were used to evoke the pastoral tranquility of rural Prince Edward Island. Sky blue, field yellow and rose pink were added to complement the original lush green tones. To retain the classic appeal of Anne, various character renditions spanning four films were used in the packaging and designs. Much time was also spent on the original photos from the 80's: from image restoration to enhancement. Greater care was placed on contemporizing these images."
+                },
+                {
+                    "title": "The Team",
+                    "desc": "<p>web design and development <strong>Christian Frias</strong><br>graphics and layout <strong>Christian Frias</strong><br>copywriting <strong>Claire Hill</strong>, <strong>Mark Reitsma</strong> and <strong>Kevin Sullivan</strong><br>video editing and post production <strong>Christian Frias</strong><br>created for <strong>Sullivan Entertainment</strong></p>"
+                }
+            ]
         },
         {
             "id": 3,
@@ -98,21 +159,6 @@
             "preview_2": "/images/work/future/os-future02.jpg",
             "preview_3": "/images/work/future/os-future03.jpg",
             "url": "/work/future-hotel-marketing"
-        },
-        {
-            "id": 4,
-            "title": "Hearts of Tango",
-            "client": "Puentebyte Productions",
-            "categories": [
-                "Branding",
-                "Graphic + Print",
-                "Motion + Video Editing"
-            ],
-            "hero": "/images/work/tango/os-tango00.jpg",
-            "preview_1": "/images/work/tango/os-tango01.jpg",
-            "preview_2": "/images/work/tango/os-tango02.jpg",
-            "preview_3": "/images/work/tango/os-tango03.jpg",
-            "url": "/work/hearts-of-tango"
         }
     ]
 }

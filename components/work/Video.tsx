@@ -1,6 +1,8 @@
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
+// https://www.npmjs.com/package/lite-youtube-embed
+
 const VideoEmbed = ({ embedId, thumbnail, title }) => (
     <div className="block py-20 bg-slate-100">
         <section>
@@ -12,7 +14,7 @@ const VideoEmbed = ({ embedId, thumbnail, title }) => (
                         id={embedId}
                         title={title}
                         thumbnail={thumbnail}
-                        params="controls=0&modestbranding=2&enablejsapi=1"
+                        params="controls=1&modestbranding=1&loop=1&enablejsapi=1"
                     />
                 </div>
             </div>
