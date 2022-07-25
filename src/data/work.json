@@ -15,7 +15,59 @@
             "preview_2": "/images/work/vizlly/os-vz02.jpg",
             "preview_3": "/images/work/vizlly/os-vz03.jpg",
             "url": "/work/vizlly",
-            "desc": "Vizlly is a digital marketing solution that allows hotels to create websites, develop pages on Facebook, and syndicate content to third party travel channels. For this project, I was tasked with product branding, designing and developing the marketing website, and creating product videos."
+            "desc": "Vizlly is a digital marketing solution that allows hotels to create websites, develop pages on Facebook, and syndicate content to third party travel channels. For this project, I was tasked with product branding, designing and developing the marketing website, and creating product videos.",
+            "statistics": [
+                { 
+                    "intro": "+508%",
+                    "outro": "Increase in Sales After Website Launch"
+                },
+                { 
+                    "intro": "+200%",
+                    "outro": "Increase in Case Study Inquiries"
+                },
+                { 
+                    "intro": "154%",
+                    "outro": "Targeted Web Traffic Visits"
+                },
+                { 
+                    "intro": "+124%",
+                    "outro": "Increase in Conversion Rate"
+                },
+                { 
+                    "intro": "4.4",
+                    "outro": "Average Page Load Time in Seconds"
+                },
+                { 
+                    "intro": "3",
+                    "outro": "Months of Development"
+                },
+                { 
+                    "intro": "88,000",
+                    "outro": "Page Views in One Year"
+                },
+                { 
+                    "intro": "60,000",
+                    "outro": "Web Traffic Visits in One Year"
+                },
+                { 
+                    "intro": "20,000",
+                    "outro": "Cumulative Views of Product Videos"
+                }
+            ],
+            "details": [
+                {
+                    "title": "The Website",
+                    "desc": "There were three areas of focus: page speed, call to action(s) and content expandability. To accomplish these, greater care was given to the use of simplified code and grids. Each visual element was optimized and designed for mobile. The influence of Shopify, Squarespace and Lodgify, among others, resulted in the incorporation of minimalism, flat design, duotones, neutral space and animation. UI was heavily influenced by analytics and a/b testing. As an extension of Leonardo, the Vizlly brand reflects innovation, ease-of-use and hospitality. The goal was to create a clean and modern brand: software with a human touch. Design elements - minimalism, flat design, hard edges, bold colours, duotones and gradients, neutral space, dynamic images - play heavily with the branding."
+                },
+                {
+                    "title": "The Videos",
+                    "desc": "The videos use clean shots with organic light, slower paced visuals and explainers, and keywords that highlight the benefits. The tone is welcoming; Vizlly is meant for all, especially those who might feel overwhelmed by new technology. As a top of the funnel resource, much of the visual focus was on the front-end of the product."
+                },
+                {
+                    "title": "The Team",
+                    "desc": "<p>web design and development <strong>Christian Frias</strong><br>copywriting <strong>Joey Egan</strong> and <strong>Debbie Stephenson</strong><br>video editing and post production <strong>Christian Frias</strong><br> created for <strong>Leonardo Worldwide Corporation</strong></p>"
+                }
+            ]
         },
         {
             "id": 2,
