@@ -27,7 +27,7 @@ function Footer() {
       <div className="px-4 py-6">
         <section className="flex sm:items-center justify-between">
           <div className="block text-sm sm:text-center">
-            © {new Date().getFullYear()} Christian Frias. Built with NextJS and TypeScript.
+            © {new Date().getFullYear()} Christian Frias. <span className="hidden md:inline">Built with NextJS and TypeScript.</span>
           </div>
           <div className="flex space-x-3 sm:justify-center">
             {/* Github */}
