@@ -5,11 +5,10 @@ function OffCanvas() {
     return (
         <div>
             <div className="">
-                <div className="offcanvas offcanvas-end fixed bottom-0 flex flex-col justify-between max-w-full bg-slate-200 invisible bg-clip-padding shadow-sm outline-none transition duration-500 ease-in-out text-gray-700 top-0 right-0 border-none w-4/6 md:w-3/6" tabIndex="-1" id="osMenu" aria-labelledby="osMenuLabel">
+                <div className="offcanvas offcanvas-end fixed bottom-0 flex flex-col justify-between max-w-full bg-slate-200 invisible bg-clip-padding shadow-sm outline-none transition duration-500 ease-in-out text-gray-700 top-0 right-0 border-none w-4/6 md:w-3/6" tabIndex={-1} id="osMenu" aria-labelledby="osMenuLabel">
                     <div className="offcanvas-header flex justify-between p-6 md:p-10">
                         <ul>
                             <li className="headerLink"><Link href="/">Home</Link></li>
-                            <li className="headerLink"><Link href="/work">Work</Link></li>
                             <li className="headerLink"><a href="https://www.linkedin.com/in/originalspecies" target="_blank">CV</a></li>
                             <li className="headerLink"><Link href="/about">About</Link></li>
                             <li className="headerLink"><Link href="/contact">Contact</Link></li>

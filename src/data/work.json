@@ -158,7 +158,36 @@
             "preview_1": "/images/work/future/os-future01.jpg",
             "preview_2": "/images/work/future/os-future02.jpg",
             "preview_3": "/images/work/future/os-future03.jpg",
-            "url": "/work/future-hotel-marketing"
+            "url": "/work/future-hotel-marketing",
+            "desc": "The Future of Hotel Marketing is a 212-page book by Leonardo Worldwide, created in print and ebook format. The purpose of the book is to educate hoteliers on effective strategies, technologies, and best practices relating to digital marketing and online bookings. For this project, I was tasked with the visual design and social media campaign creative direction.",
+            "statistics": [
+                { 
+                    "intro": "134%",
+                    "outro": "Lead Acquisition Target Achieved (Q2 2017)"
+                },
+                { 
+                    "intro": "18.4%",
+                    "outro": "LP Conversion Rate Monthly Peak (Industry Avg is 5)"
+                },
+                { 
+                    "intro": "45k",
+                    "outro": "Educational Downloads of Marketing Content"
+                }
+            ],
+            "details": [
+                {
+                    "title": "The Designs",
+                    "desc": "The designs reflect the Leonardo brand through the bright colours and bold visuals. The book projects a refreshing look at topics that might otherwise seem monotonous. The goal was to complement the copy, quotes and statistics with graphics, layouts, images and fonts that heightened the experience. Semi-flat design, geometric shapes, subtle gradients, bokeh lighting, neutral space and large typography were frequently used."
+                },
+                {
+                    "title": "The Campaign",
+                    "desc": "The promotional designs are experimental - influenced by scrapbooking and mixed-media cutout art. From vectors to photography, 3d images to minimalistic geometric shapes, the design mix further augments the copy."
+                },
+                {
+                    "title": "The Team",
+                    "desc": "<p>design and layout <strong>Christian Frias</strong><br>copywriting <strong>Vicky Abihsira</strong>, <strong>Joey Egan</strong>, <strong>Julie Ford</strong>, <strong>Candace Green</strong> and <strong>Debbie Stephenson</strong><br>created for <strong>Leonardo Worldwide Corporation</strong></p>"
+                }
+            ]
         }
     ]
 }

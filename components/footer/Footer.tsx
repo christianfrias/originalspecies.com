@@ -7,7 +7,7 @@ function Footer() {
       <div className="px-4 py-8 bg-slate-100">
         <section className="md:flex md:items-center md:justify-between gap-10 ">
           <p className="block text-center md:text-left max-w-xl">
-            <strong>Hello. I&#39;m Christian.</strong> I&#39;m a visual designer and
+            <strong>Hello. I'm Christian.</strong> I'm a visual designer and
             coder who helps companies conceptualize, create and deliver
             data-driven products and meaningful digital experiences. I take an
             interdisciplinary approach, blending design, code and video, to
@@ -15,7 +15,7 @@ function Footer() {
           </p>
           <div className="flex mt-4 space-x-6 justify-center md:mt-0 text-center md:text-right">
             <h3 className="text-xl md:text-3xl leading-6 md:leading-9">
-              Let&#39;s work together.
+              Let's work together.
               <br />
               <Link href="mailto:hello@originalspecies.com">
                 <a className="font-semibold hover:text-ribbon">hello@originalspecies.com</a>
@@ -27,7 +27,7 @@ function Footer() {
       <div className="px-4 py-6">
         <section className="flex sm:items-center justify-between">
           <div className="block text-sm sm:text-center">
-            © {new Date().getFullYear()} Christian Frias. 
+            © {new Date().getFullYear()} Christian Frias. Built with NextJS and TypeScript.
           </div>
           <div className="flex space-x-3 sm:justify-center">
             {/* Github */}
