@@ -1,5 +1,14 @@
-function Code(props) {
-    const copy = props.details
+type PropTypes = {
+    details:WorkTypes;
+}
+
+type WorkTypes = {
+    title: string;
+    desc: string;
+}
+
+function Code(props: PropTypes) {
+    const copy = props.details;
 
     return (
         <div className="block py-20">
@@ -9,11 +18,11 @@ function Code(props) {
                         <h2 className="text-2xl md:text-2xl leading-10 md:leading-8 font-semibold text-ribbon">{copy.title}</h2>
                     </div>
                     <div className="col-span-1 md:col-span-4 lg:col-span-3">
-                        <div dangerouslySetInnerHTML={{__html: copy.desc}} className="leading-8 text-lg"/>
+                        <div dangerouslySetInnerHTML={{ __html: copy.desc }} className="leading-8 text-lg" />
                     </div>
-                </div>  
+                </div>
             </section>
-               
+
         </div>
     )
 }

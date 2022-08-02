@@ -4,15 +4,9 @@ import Form from '../components/contact/Form'
 import Footer from '../components/footer/Footer'
 import HeaderAlt from '../components/header/HeaderAlt'
 
-const Contact: NextPage = (props) => {
-  const work = props.work;
-
+const Contact: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>OriginalSpecies by Christian Frias</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <HeaderAlt/>
 
       <main className="py-28 bg-slate-50">

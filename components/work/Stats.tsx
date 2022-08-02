@@ -1,6 +1,10 @@
 import Image from "next/image"
 
-function Stats(statsIn) {
+type PropTypes = {
+    statsIn:string;
+}
+
+function Stats(statsIn:PropTypes) {
     const projStats = statsIn.statsIn
     
     return (

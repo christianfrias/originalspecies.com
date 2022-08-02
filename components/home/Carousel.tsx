@@ -1,7 +1,11 @@
 import Image from "next/image"
 import Link from "next/link"
 
-function Carousel({ work }) {
+type WorkTypes = {
+	work?: string;
+}
+
+function Carousel({ work }:WorkTypes) {
     return (
         <div>
             <div id="osWork" className="carousel slide carousel-fade relative bg-white" data-bs-ride="carousel">

@@ -42,10 +42,6 @@ const Future: NextPage = (props) => {
 
     return (
         <div>
-            <Head>
-                <title>OriginalSpecies by Christian Frias</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <Header />
 
             <main>

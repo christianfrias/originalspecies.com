@@ -3,7 +3,13 @@ import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 // https://www.npmjs.com/package/lite-youtube-embed
 
-const VideoEmbed = ({ embedId, thumbnail, title }) => (
+type PropTypes = {
+    embedId:string;
+    thumbnail:string;
+    title:string;
+}
+
+const VideoEmbed = ({ embedId, thumbnail, title }:PropTypes) => (
     <div className="block py-20 bg-slate-100">
         <section>
             <div className="grid grid-cols-1">

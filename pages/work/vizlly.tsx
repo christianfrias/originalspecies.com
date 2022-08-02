@@ -39,10 +39,6 @@ const Vizlly: NextPage = (props) => {
 
     return (
         <div>
-            <Head>
-                <title>OriginalSpecies by Christian Frias</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <Header />
 
             <main>
@@ -70,8 +66,6 @@ const Vizlly: NextPage = (props) => {
 }
 
 export default Vizlly
-
-
 
 export async function getStaticProps() {
     const filePath = path.join(process.cwd(), '/src/data/work.json');

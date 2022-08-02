@@ -1,6 +1,15 @@
 import ReactMarkdown from 'react-markdown'
 
-function Markdown(props) {
+type PropTypes = {
+    details:WorkTypes;
+}
+
+type WorkTypes = {
+    title:string;
+    desc:string;
+}
+
+function Markdown(props:PropTypes) {
     const copy = props.details
     return (
         <div className="block py-20">
