@@ -34,7 +34,7 @@ import path from 'path'
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), '/src/data/work.json');
   const jsonData = await fsPromises.readFile(filePath);
-  const objectData = JSON.parse(jsonData);
+  const objectData = JSON.parse(jsonData.toString());
 
   return {
     props: objectData

@@ -1,10 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
 import Form from '../components/contact/Form'
 import Footer from '../components/footer/Footer'
 import HeaderAlt from '../components/header/HeaderAlt'
 
-const Contact: NextPage = () => {
+const Contact = () => {
   return (
     <div>
       <HeaderAlt/>

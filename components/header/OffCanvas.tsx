@@ -10,7 +10,7 @@ function OffCanvas() {
                         <ul>
                             <li className="headerLink"><Link href="/"><a data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => Router.push("/")}>Home</a></Link></li>
                             <li className="headerLink"><a href="https://www.linkedin.com/in/originalspecies" target="_blank">CV</a></li>
-                            <li className="headerLink"><Link href="/about"><a data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => Router.push("/about")}>About</a></Link></li>
+                            <li className="headerLink"><Link href="/"><a data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => Router.push("/")}>Work</a></Link></li>
                             <li className="headerLink"><Link href="/contact"><a data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => Router.push("/contact")}>Contact</a></Link></li>
                         </ul>
                         <div>

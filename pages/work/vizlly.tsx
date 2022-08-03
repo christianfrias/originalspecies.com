@@ -1,7 +1,5 @@
-import type { NextPage } from 'next'
 import fsPromises from 'fs/promises';
 import path from 'path'
-import Head from 'next/head'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import ImageFW from '../../components/work/ImageFW'
@@ -10,7 +8,7 @@ import Image2Col from '../../components/work/Image2Col'
 import Intro from '../../components/work/Intro'
 import Stats from '../../components/work/Stats'
 import Markdown from '../../components/work/Markdown'
-import VideoEmbed from '../../components/work/video'
+import VideoEmbed from '../../components/work/Video'
 import Code from '../../components/work/Code'
 
 import vz04 from '../../public/images/work/vizlly/os-vz04.jpg'
@@ -29,7 +27,16 @@ import vz17 from '../../public/images/work/vizlly/os-vz17.jpg'
 const vz18 = '/images/work/vizlly/os-vz18.jpg'
 const vz19 = '/images/work/vizlly/os-vz19.jpg'
 
-const Vizlly: NextPage = (props) => {
+type WorkTypes = {
+    title:string;
+    desc:string;
+    categories:string;
+    statistics:string;
+    details:string;
+    work:any;
+}
+
+const Vizlly = (props:WorkTypes) => {
     const work = props.work[0];
     const title = work.title;
     const desc = work.desc;
@@ -42,19 +49,19 @@ const Vizlly: NextPage = (props) => {
             <Header />
 
             <main>
-                <Hero img={vz04} title={title} />
+                <Hero img={vz04.src} title={title} />
                 <Intro title={title} desc={desc} role={role} />
                 <Stats statsIn={stats} />
-                <ImageFW img={vz07} title={title} />
+                <ImageFW img={vz07.src} title={title}/>
                 <Markdown details={details[0]} />
-                <ImageFW img={vz08} title={title} />
-                <ImageFW img={vz09} title={title} />
-                <Image2Col imgL={vz10} imgR={vz11} title={title} />
-                <ImageFW img={vz12} title={title} />
-                <ImageFW img={vz13} title={title} />
-                <Image2Col imgL={vz14} imgR={vz15} title={title} />
-                <ImageFW img={vz16} title={title} />
-                <ImageFW img={vz17} title={title} />
+                <ImageFW img={vz08.src} title={title} width={1920} height={2120}/>
+                <ImageFW img={vz09.src} title={title} width={1920} height={2120}/>
+                <Image2Col imgL={vz10.src} imgR={vz11.src} title={title} />
+                <ImageFW img={vz12.src} title={title}/>
+                <ImageFW img={vz13.src} title={title}/>
+                <Image2Col imgL={vz14.src} imgR={vz15.src} title={title} width={1396} height={2500}/>
+                <ImageFW img={vz16.src} title={title} width={1920} height={2120}/>
+                <ImageFW img={vz17.src} title={title} width={1920} height={2805}/>
                 <VideoEmbed embedId="h5QzjA3OUuM" thumbnail={vz18} title={title} />
                 <Markdown details={details[1]} />
                 <VideoEmbed embedId="axnD891akQc" thumbnail={vz19} title={title} />
@@ -70,7 +77,7 @@ export default Vizlly
 export async function getStaticProps() {
     const filePath = path.join(process.cwd(), '/src/data/work.json');
     const jsonData = await fsPromises.readFile(filePath);
-    const objectData = JSON.parse(jsonData);
+    const objectData = JSON.parse(jsonData.toString());
 
     return {
         props: objectData

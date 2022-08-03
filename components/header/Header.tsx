@@ -23,7 +23,7 @@ function Header() {
     },[])
 
     return (  
-        <header className={`fixed top-0 z-50 w-full py-4 transition duration-500 ${isScrolled && 'bg-white/90'}`}>
+        <header className={`fixed top-0 z-50 w-full py-4 md:px-4 xl:px-0 transition duration-500 ${isScrolled && 'bg-white/90'}`}>
             <section className="flex items-center justify-between transition-all">
                 <div>
                     <Link href="/">

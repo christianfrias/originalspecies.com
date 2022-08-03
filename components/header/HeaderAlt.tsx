@@ -1,6 +1,5 @@
 import { MenuAlt1Icon } from "@heroicons/react/solid"
 import Link from "next/link"
-import {useState, useEffect} from "react"
 import OffCanvas from "./OffCanvas"
 
 function Header() {

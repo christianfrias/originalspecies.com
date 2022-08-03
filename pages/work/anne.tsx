@@ -30,19 +30,17 @@ import anne19 from '../../public/images/work/anne/os-anne19.jpg'
 
 const anne20 = '/images/work/anne/os-anne20.jpg'
 
-type PropTypes = {
-    work:WorkTypes;
-}
-
 type WorkTypes = {
     title:string;
     desc:string;
+    categories:string;
     statistics:string;
     details:string;
+    work:any;
 }
 
-const Anne = (props:PropTypes) => {
-    const work:string = props.work[1];
+const Anne = (props:WorkTypes) => {
+    const work = props.work[1];
     const title = work.title;
     const desc = work.desc;
     const role = work.categories.join(', ');
@@ -57,21 +55,21 @@ const Anne = (props:PropTypes) => {
                 <Hero img={anne04.src} title={title} />
                 <Intro title={title} desc={desc} role={role} />
                 <Stats statsIn={stats} />
-                <ImageFW img={anne06.src} title={title} />
+                <ImageFW img={anne06.src} title={title} width={1920} height={1080} />
                 <Markdown details={details[0]} />
-                <ImageFW img={anne07.src} title={title} />
-                <ImageFW img={anne08.src} title={title} />
+                <ImageFW img={anne07.src} title={title} width={1920} height={2120}/>
+                <ImageFW img={anne08.src} title={title} width={1920} height={2120}/>
                 <Image2Col imgL={anne09.src} imgR={anne10.src} title={title} />
-                <ImageFW img={anne11.src} title={title} />
-                <ImageFW img={anne12.src} title={title} />
+                <ImageFW img={anne11.src} title={title}/>
+                <ImageFW img={anne12.src} title={title}/>
                 <Markdown details={details[1]} />
-                <ImageFW img={anne13.src} title={title} />
-                <ImageFW img={anne14.src} title={title} />
-                <ImageFW img={anne15.src} title={title} />
-                <ImageFW img={anne16.src} title={title} />
-                <ImageFW img={anne17.src} title={title} />
-                <ImageFW img={anne18.src} title={title} />
-                <ImageFW img={anne19.src} title={title} />                
+                <ImageFW img={anne13.src} title={title}/>
+                <ImageFW img={anne14.src} title={title}/>
+                <ImageFW img={anne15.src} title={title}/>
+                <ImageFW img={anne16.src} title={title}/>
+                <ImageFW img={anne17.src} title={title}/>
+                <ImageFW img={anne18.src} title={title}/>
+                <ImageFW img={anne19.src} title={title}/>                
                 <VideoEmbed embedId="UG3IizNSovs" thumbnail={anne20} title={title} />
                 <Code details={details[2]}/>
             </main>
@@ -85,7 +83,7 @@ export default Anne
 export async function getStaticProps() {
     const filePath = path.join(process.cwd(), '/src/data/work.json');
     const jsonData = await fsPromises.readFile(filePath);
-    const objectData = JSON.parse(jsonData);
+    const objectData = JSON.parse(jsonData.toString());
 
     return {
         props: objectData

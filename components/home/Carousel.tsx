@@ -1,23 +1,29 @@
 import Image from "next/image"
 import Link from "next/link"
 
-type WorkTypes = {
-	work?: string;
+type PropTypes = {
+    work:WorkTypes;
 }
 
-function Carousel({ work }:WorkTypes) {
+type WorkTypes = {
+	title:string;
+    hero:string;
+    url:string;
+}
+
+function Carousel({ work }:PropTypes) {
     return (
         <div>
             <div id="osWork" className="carousel slide carousel-fade relative bg-white" data-bs-ride="carousel">
                 <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-                    {work.slice(0, 5).map((proj, i) => 
+                    {work.slice(0, 5).map((proj:WorkTypes, i:number) => 
                         <button type="button" data-bs-target="#osWork" data-bs-slide-to={i}
-                        aria-label={`Slide ${i}`} className={`${i == 0 ? "active" : ""}`} aria-current={`${i == 0 ? "true" : ""}`} key={i}></button>
+                        aria-label={`Slide ${i}`} className={`${i == 0 ? "active" : ""}`} aria-current={`${i == 0 ? "true" : ""}`} key={i}/>
                     )}
                 </div>
 
                 <div className="carousel-inner relative w-full overflow-hidden " >
-                    {work.slice(0, 5).map((proj, i) =>         
+                    {work.slice(0, 5).map((proj:WorkTypes, i:number) =>         
                         <div className={`carousel-item relative float-left w-full h-[500px] md:h-[650px] ${i == 0 ? "active" : ""}`} key={i}>
                             <Image src={proj.hero} className='block w-full' layout='fill' objectFit='cover' alt={proj.title} priority />
                             <div className="carousel-caption hidden md:block absolute text-center drop-shadow-2xl">
