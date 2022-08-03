@@ -1,17 +1,14 @@
-import type { NextPage } from 'next'
 import fsPromises from 'fs/promises';
 import path from 'path'
-import Head from 'next/head'
 import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import ImageFW from '../../components/work/ImageFW'
 import Hero from '../../components/work/Hero'
-import Image2Col from '../../components/work/Image2Col'
 import Intro from '../../components/work/Intro'
 import Stats from '../../components/work/Stats'
 import Markdown from '../../components/work/Markdown'
-import VideoEmbed from '../../components/work/video'
 import Code from '../../components/work/Code'
+import { NextSeo } from 'next-seo';
 
 import future04 from '../../public/images/work/future/os-future04.jpg'
 import future05 from '../../public/images/work/future/os-future05.jpg'
@@ -32,45 +29,56 @@ import future19 from '../../public/images/work/future/os-future19.jpg'
 import future20 from '../../public/images/work/future/os-future20.jpg'
 import future21 from '../../public/images/work/future/os-future21.jpg'
 
-const Future: NextPage = (props) => {
+type WorkTypes = {
+    title:string;
+    desc:string;
+    categories:string;
+    statistics:string;
+    details:string;
+    meta:string;
+    work:any;
+}
+
+const Future = (props:WorkTypes) => {
     const work = props.work[2];
     const title = work.title;
     const desc = work.desc;
+    const meta = work.meta;
     const role = work.categories.join(', ');
     const stats = work.statistics;
     const details = work.details;
 
     return (
         <div>
-            <Head>
-                <title>OriginalSpecies by Christian Frias</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+             <NextSeo
+                title={`${title} - Project Highlights by Christian Frias`}
+                description={meta}
+                />
             <Header />
 
             <main>
-                <Hero img={future04} title={title} />
+                <Hero img={future04.src} title={title} />
                 <Intro title={title} desc={desc} role={role} />
                 <Stats statsIn={stats} />
-                <ImageFW img={future05} title={title} />
+                <ImageFW img={future05.src} title={title} />
                 <Markdown details={details[0]} />
-                <ImageFW img={future06} title={title} />
-                <ImageFW img={future07} title={title} />
-                <ImageFW img={future08} title={title} />
-                <ImageFW img={future09} title={title} />
-                <ImageFW img={future10} title={title} />
-                <ImageFW img={future11} title={title} />
-                <ImageFW img={future12} title={title} />
-                <ImageFW img={future13} title={title} />
-                <ImageFW img={future14} title={title} />
-                <ImageFW img={future15} title={title} />
-                <ImageFW img={future16} title={title} />
-                <ImageFW img={future17} title={title} />
-                <ImageFW img={future18} title={title} />
+                <ImageFW img={future06.src} title={title} height={1753}/>
+                <ImageFW img={future07.src} title={title} />
+                <ImageFW img={future08.src} title={title} />
+                <ImageFW img={future09.src} title={title} />
+                <ImageFW img={future10.src} title={title} height={1749}/>
+                <ImageFW img={future11.src} title={title} />
+                <ImageFW img={future12.src} title={title} />
+                <ImageFW img={future13.src} title={title} height={1772}/>
+                <ImageFW img={future14.src} title={title} />
+                <ImageFW img={future15.src} title={title} />
+                <ImageFW img={future16.src} title={title} />
+                <ImageFW img={future17.src} title={title} />
+                <ImageFW img={future18.src} title={title} height={2805}/>
                 <Markdown details={details[1]} />
-                <ImageFW img={future19} title={title} />
-                <ImageFW img={future20} title={title} />
-                <ImageFW img={future21} title={title} />
+                <ImageFW img={future19.src} title={title} height={2985}/>
+                <ImageFW img={future20.src} title={title} height={2120}/>
+                <ImageFW img={future21.src} title={title} />
                 <Code details={details[2]}/>
             </main>
             <Footer />
@@ -85,7 +93,7 @@ export default Future
 export async function getStaticProps() {
     const filePath = path.join(process.cwd(), '/src/data/work.json');
     const jsonData = await fsPromises.readFile(filePath);
-    const objectData = JSON.parse(jsonData);
+    const objectData = JSON.parse(jsonData.toString());
 
     return {
         props: objectData

@@ -1,6 +1,10 @@
-import Image from "next/image"
+type PropTypes = {
+    desc:string;
+    role:string;
+    title:string;
+}
 
-function Intro(props) {
+function Intro(props:PropTypes) {
     return (
         <div className="block py-20">
             <section>

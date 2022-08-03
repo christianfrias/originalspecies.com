@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import Router from "next/router"
 
@@ -11,11 +10,10 @@ function OffCanvas() {
                         <ul>
                             <li className="headerLink"><Link href="/"><a data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => Router.push("/")}>Home</a></Link></li>
                             <li className="headerLink"><a href="https://www.linkedin.com/in/originalspecies" target="_blank">CV</a></li>
-                            <li className="headerLink"><Link href="/about"><a data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => Router.push("/about")}>About</a></Link></li>
+                            <li className="headerLink"><Link href="/"><a data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => Router.push("/")}>Work</a></Link></li>
                             <li className="headerLink"><Link href="/contact"><a data-bs-dismiss="offcanvas" aria-label="Close" onClick={() => Router.push("/contact")}>Contact</a></Link></li>
                         </ul>
                         <div>
-                        <a type="button" className="" data-bs-dismiss="offcanvas" aria-label="Close">X</a>
                             <button type="button" className="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>                    
                     </div>

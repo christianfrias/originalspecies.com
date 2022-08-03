@@ -8,7 +8,7 @@
         @apply text-slate-900;
     }
     main {
-        @apply bg-white md:mb-72 lg:mb-60;
+        @apply bg-white md:mb-[17.25rem] lg:mb-[14.25rem];
     }
     section {
         @apply container mx-auto px-4 md:px-0;
@@ -21,6 +21,16 @@
     }
     footer {
         @apply md:fixed md:bottom-0 -z-50 flex flex-col w-full justify-between;
+    }
+    label {
+        @apply hidden;
+    }
+    input {
+        @apply text-xl w-full py-2 mb-4 bg-transparent border-b border-slate-200 border-solid outline-0;;
+    }
+    textarea {
+        @apply text-xl w-full py-2 mb-4 bg-transparent outline-0 h-[350px];
+        background-image: repeating-linear-gradient(to bottom, transparent, transparent 45px, rgba(226, 232, 240, 1) 47px);
     }
 }
  /* custom classNames */

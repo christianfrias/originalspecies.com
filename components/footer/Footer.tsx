@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 function Footer() {
   return (
@@ -17,7 +16,7 @@ function Footer() {
             <h3 className="text-xl md:text-3xl leading-6 md:leading-9">
               Let's work together.
               <br />
-              <Link href="mailto:hello@originalspecies.com">
+              <Link href="/contact">
                 <a className="font-semibold hover:text-ribbon">hello@originalspecies.com</a>
               </Link>
             </h3>
