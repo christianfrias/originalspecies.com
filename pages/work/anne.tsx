@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import fsPromises from 'fs/promises';
 import path from 'path'
 import Footer from '../../components/footer/Footer'
@@ -11,6 +10,7 @@ import Stats from '../../components/work/Stats'
 import Markdown from '../../components/work/Markdown'
 import VideoEmbed from '../../components/work/Video'
 import Code from '../../components/work/Code'
+import { NextSeo } from 'next-seo';
 
 import anne04 from '../../public/images/work/anne/os-anne04.jpg'
 import anne06 from '../../public/images/work/anne/os-anne06.jpg'
@@ -36,6 +36,7 @@ type WorkTypes = {
     categories:string;
     statistics:string;
     details:string;
+    meta:string;
     work:any;
 }
 
@@ -43,12 +44,17 @@ const Anne = (props:WorkTypes) => {
     const work = props.work[1];
     const title = work.title;
     const desc = work.desc;
+    const meta = work.meta;
     const role = work.categories.join(', ');
     const stats = work.statistics;
     const details = work.details;
 
     return (
         <div>
+            <NextSeo
+                title={`${title} - Project Highlights by Christian Frias`}
+                description={meta}
+                />
             <Header />
 
             <main>

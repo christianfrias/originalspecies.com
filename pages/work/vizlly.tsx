@@ -10,6 +10,7 @@ import Stats from '../../components/work/Stats'
 import Markdown from '../../components/work/Markdown'
 import VideoEmbed from '../../components/work/Video'
 import Code from '../../components/work/Code'
+import { NextSeo } from 'next-seo';
 
 import vz04 from '../../public/images/work/vizlly/os-vz04.jpg'
 import vz07 from '../../public/images/work/vizlly/os-vz07.jpg'
@@ -33,6 +34,7 @@ type WorkTypes = {
     categories:string;
     statistics:string;
     details:string;
+    meta:string;
     work:any;
 }
 
@@ -40,12 +42,17 @@ const Vizlly = (props:WorkTypes) => {
     const work = props.work[0];
     const title = work.title;
     const desc = work.desc;
+    const meta = work.meta;
     const role = work.categories.join(', ');
     const stats = work.statistics;
     const details = work.details;
 
     return (
         <div>
+            <NextSeo
+                title={`${title} - Project Highlights by Christian Frias`}
+                description={meta}
+                />
             <Header />
 
             <main>

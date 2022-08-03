@@ -8,6 +8,7 @@ import Intro from '../../components/work/Intro'
 import Stats from '../../components/work/Stats'
 import Markdown from '../../components/work/Markdown'
 import Code from '../../components/work/Code'
+import { NextSeo } from 'next-seo';
 
 import future04 from '../../public/images/work/future/os-future04.jpg'
 import future05 from '../../public/images/work/future/os-future05.jpg'
@@ -34,6 +35,7 @@ type WorkTypes = {
     categories:string;
     statistics:string;
     details:string;
+    meta:string;
     work:any;
 }
 
@@ -41,12 +43,17 @@ const Future = (props:WorkTypes) => {
     const work = props.work[2];
     const title = work.title;
     const desc = work.desc;
+    const meta = work.meta;
     const role = work.categories.join(', ');
     const stats = work.statistics;
     const details = work.details;
 
     return (
         <div>
+             <NextSeo
+                title={`${title} - Project Highlights by Christian Frias`}
+                description={meta}
+                />
             <Header />
 
             <main>
