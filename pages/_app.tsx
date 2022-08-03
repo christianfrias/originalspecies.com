@@ -21,21 +21,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         site_name: 'Original Species by Christian Frias - Front End Web Developer',
         images: [
           {
-            url: 'https://www.example.ie/og-image-01.jpg',
-            width: 800,
-            height: 600,
-            alt: 'Og Image Alt',
+            url: "/images/work/vizlly/os-vz13.jpg",
+            width: 1920,
+            height: 1080,
+            alt: 'Original Species by Christian Frias - Front End Web Developer',
             type: 'image/jpeg',
           },
-          {
-            url: 'https://www.example.ie/og-image-02.jpg',
-            width: 900,
-            height: 800,
-            alt: 'Og Image Alt Second',
-            type: 'image/jpeg',
-          },
-          { url: 'https://www.example.ie/og-image-03.jpg' },
-          { url: 'https://www.example.ie/og-image-04.jpg' },
         ],
       }}
     />
