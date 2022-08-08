@@ -60,7 +60,7 @@ const Anne = (props:WorkTypes) => {
             <main>
                 <Hero img={anne04.src} title={title} />
                 <Intro title={title} desc={desc} role={role} />
-                <Stats statsIn={stats} />
+                <Stats stats={stats} />
                 <ImageFW img={anne06.src} title={title} width={1920} height={1080} />
                 <Markdown details={details[0]} />
                 <ImageFW img={anne07.src} title={title} width={1920} height={2120}/>

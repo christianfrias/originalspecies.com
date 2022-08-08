@@ -1,8 +1,14 @@
 import Image from "next/image"
-import PropTypes from 'prop-types';
+
+type PropTypes = {
+    work:WorkTypes;
+}
 
 type WorkTypes = {
-	work?: string;
+	[key: string]: any;
+	title:string;
+    hero:string;
+    url:string;
 }
 
 type ProjTypes = {
@@ -14,10 +20,10 @@ type ProjTypes = {
 	url: string;
 }
 
-function Work({ work }:WorkTypes) {
+function Work({ work }:PropTypes) {
 	return (
 		<div className="mt-12">
-			{work.map((proj: ProjTypes, i: number) =>
+			{work.map((proj: WorkTypes, i: number) =>
 				<div className="mt-4 mb-4 pb-4 border-b" key={i}>
 					<a href={proj.url}>
 						<table className="w-full">

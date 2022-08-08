@@ -2,7 +2,7 @@ import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha
 import { useState } from 'react';
 
 function Form() {
-    const [token, setToken] = useState();
+    const [token, setToken] = useState<any | null>(null);
 
     return (
         <div>
@@ -20,7 +20,7 @@ function Form() {
                 <label>Message</label>
                 <textarea name="message" placeholder="Message*" required />
                 <p className="mb-4 text-slate-400">Please note, all fields are required.</p>
-                <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}>
+                <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}>
                     <GoogleReCaptcha onVerify={token => {
                         setToken(token);
                     }} />

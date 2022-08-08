@@ -5,10 +5,22 @@ import Carousel from '../components/home/Carousel'
 import Work from '../components/home/Work'
 
 type PropTypes = {
-  work?:string;
+  work:WorkTypes;
 }
 
-const Home: NextPage = (props:PropTypes) => {
+type WorkTypes = {
+  title:string;
+  desc:string;
+  categories:string;
+  statistics:string;
+  details:string;
+  meta:string;
+  hero:string;
+  url:string;
+  work:any;
+}
+
+const Home = (props:PropTypes) => {
   const work = props.work;
 
   return (
