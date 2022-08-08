@@ -59,7 +59,7 @@ const Future = (props:WorkTypes) => {
             <main>
                 <Hero img={future04.src} title={title} />
                 <Intro title={title} desc={desc} role={role} />
-                <Stats statsIn={stats} />
+                <Stats stats={stats} />
                 <ImageFW img={future05.src} title={title} />
                 <Markdown details={details[0]} />
                 <ImageFW img={future06.src} title={title} height={1753}/>

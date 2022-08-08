@@ -58,7 +58,7 @@ const Vizlly = (props:WorkTypes) => {
             <main>
                 <Hero img={vz04.src} title={title} />
                 <Intro title={title} desc={desc} role={role} />
-                <Stats statsIn={stats} />
+                <Stats stats={stats} />
                 <ImageFW img={vz07.src} title={title}/>
                 <Markdown details={details[0]} />
                 <ImageFW img={vz08.src} title={title} width={1920} height={2120}/>
